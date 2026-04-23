@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no, date=no, email=no, address=no">
+<title>진보당 권혁 영도구 가선거구 구의원 후보</title>
+<meta name="description" content="뚝심의 영도일꾼, 권혁 후보의 공식 홈페이지입니다.">
+<meta property="og:title" content="진보당 권혁 영도구 가선거구 구의원 후보">
+<meta property="og:description" content="뚝심의 영도일꾼, 진심으로 영도를 위해 일하고 싶습니다!">
+<meta property="og:url" content="https://busanjinbo.github.io/yeongdo_kwon/">
+<meta property="og:image" content="https://busanjinbo.github.io/yeongdo_kwon/assets/thumbnail.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+<!-- Twitter Card 설정 (텔레그램, 트위터 최적화) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="진보당 권혁 영도구 가선거구 구의원 후보">
+<meta name="twitter:description" content="뚝심의 영도일꾼, 진심으로 영도를 위해 일하고 싶습니다!">
+<meta name="twitter:image" content="https://busanjinbo.github.io/yeongdo_kwon/assets/thumbnail.webp">
+<!-- Pretendard 폰트 (고급스럽고 가독성 뛰어남) -->
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Tailwind 설정 -->
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Pretendard', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        primary: '#ffffff', // 메인 배경 (흰색)
+        secondary: '#addef8', // 메인/서브 테마 넓은 면적 (하늘색)
+        secondarydark: '#7bc1e8', // 텍스트 등 가독성을 위한 하늘색 톤
+        point: '#e60012', // 강조/복사버튼 용도 (빨간색 - 극소량)
+        dark: '#1e293b', // 주요 텍스트 
+        graytext: '#475569', // 부가 텍스트
+        graylight: '#f8fafc', // 보조 배경
+      }
+    }
+  }
+}
+</script>
+<style>
+body {
+  font-family: 'Pretendard', sans-serif;
+  color: #1e293b;
+  background-color: #ffffff;
+  word-break: keep-all; 
+}
+html {
+  scroll-padding-top: 70px; 
+}
+.img-cover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* 아코디언 관련 애니메이션 */
+.donate-details {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+}
+.donate-details.active {
+  max-height: 800px;
+  opacity: 1;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+</style>
+</head>
+<body class="bg-primary antialiased">
+<!-- 0. 상단 네비게이션바 -->
+<nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur shadow-sm z-50 border-b-4 border-secondary transition-all">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+<div class="flex justify-between items-center h-16 md:h-20">
+<a href="#" class="flex items-center gap-2 group">
+<!-- 진보당 로고 -->
+<img src="./assets/logo.webp" alt="진보당 로고" class="h-5 md:h-7 w-auto object-contain">
+<div class="w-8 h-8 md:w-10 md:h-10 rounded-full bg-secondary flex items-center justify-center text-dark font-extrabold text-lg border border-white shadow-sm">
+5
+</div>
+<span class="text-xl md:text-2xl font-black tracking-tight text-dark group-hover:text-secondarydark transition-colors">
+권혁
+</span>
+</a>
+<div class="hidden md:flex space-x-6 items-center">
+<a href="#hero" class="text-lg font-bold text-gray-700 hover:text-secondarydark transition-colors">홈</a>
+<a href="#donate" class="text-lg font-bold text-gray-700 hover:text-secondarydark transition-colors">후원안내</a>
+<a href="#about" class="text-lg font-bold text-gray-700 hover:text-secondarydark transition-colors">후보소개</a>
+<a href="#activity" class="text-lg font-bold text-gray-700 hover:text-secondarydark transition-colors">지역활동</a>
+<a href="#pledge" class="text-lg font-bold text-gray-700 hover:text-secondarydark transition-colors">공약안내</a>
+</div>
+<button id="mobile-menu-btn" class="md:hidden text-dark p-2 focus:outline-none">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+</svg>
+</button>
+</div>
+</div>
+<!-- 모바일 드롭다운 -->
+<div id="mobile-menu" class="hidden md:hidden bg-blue-50 border-t border-secondary/30 drop-shadow-lg">
+<div class="flex flex-col px-4 pt-2 pb-6 space-y-2">
+<a href="#hero" class="mobile-link block px-4 py-3 rounded-lg text-lg text-center font-bold text-dark hover:bg-secondary/40">홈</a>
+<a href="#donate" class="mobile-link block px-4 py-3 rounded-lg text-lg text-center font-bold text-dark hover:bg-secondary/40">후원안내</a>
+<a href="#about" class="mobile-link block px-4 py-3 rounded-lg text-lg text-center font-bold text-dark hover:bg-secondary/40">후보소개</a>
+<a href="#activity" class="mobile-link block px-4 py-3 rounded-lg text-lg text-center font-bold text-dark hover:bg-secondary/40">지역활동</a>
+<a href="#pledge" class="mobile-link block px-4 py-3 rounded-lg text-lg text-center font-bold text-dark hover:bg-secondary/40">공약안내</a>
+</div>
+</div>
+</nav>
+<!-- 1. 메인 히어로 섹션 -->
+<header id="hero" class="relative w-full mt-16 md:mt-20 pt-10 md:pt-0 md:h-[80vh] min-h-[600px] bg-sky-50 overflow-hidden flex items-center">
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary rounded-full opacity-40 blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
+<div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary rounded-full opacity-20 blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+<div class="relative z-10 w-full max-w-5xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row shadow-none items-center justify-between">
+<!-- 좌측 텍스트 -->
+<div class="w-full md:w-3/5 text-center md:text-left z-20 md:pr-4 pt-8 md:pt-0">
+<div class="inline-flex items-center justify-center gap-2 mb-4">
+<span class="px-3 py-1 bg-point text-white font-black text-sm md:text-base rounded-md shadow-sm">기호 5번</span>
+<span class="text-lg md:text-xl font-bold text-secondarydark">진심으로 영도를 위해 일하고 싶습니다</span>
+</div>
+<!-- 메인 타이틀 -->
+<h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-dark leading-tight tracking-tight mb-4 break-keep">
+뚝심의 영도일꾼<br>
+<span class="text-secondarydark">권혁</span>
+</h1>
+<!-- 서브 설명 -->
+<p class="text-xl md:text-2xl text-graytext font-medium break-keep mb-8 bg-white/60 inline-block px-3 py-1 rounded-lg">
+영도구의원 후보 (남항, 신선, 영선, 봉래, 청학)
+</p>
+</div>
+<!-- 우측 후보자 사진 (4:5 아치형 디자인 강제 적용) -->
+<div class="w-10/12 sm:w-1/2 md:w-2/5 flex justify-center mt-12 md:mt-0 relative z-10">
+<!-- 이미지가 4:5 꽉 차는 아치형으로 그려집니다. 배경 여백 문제를 완벽히 해결! -->
+<img src="./assets/profile.webp" alt="권혁" class="w-full max-w-[400px] h-auto object-cover rounded-t-full rounded-b-2xl shadow-xl shadow-secondary/30 bg-secondary/20" style="aspect-ratio: 4/5;">
+</div>
+</div>
+</header>
+<!-- 2. 후원 안내 섹션 -->
+<section id="donate" class="py-20 md:py-28 bg-white relative">
+<div class="max-w-4xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-10">
+<h2 class="text-4xl md:text-5xl font-black text-dark mb-4 break-keep">권혁에게 힘이 되어주세요.</h2>
+<div class="w-16 h-1.5 bg-secondary mx-auto mb-6"></div>
+<h3 class="text-xl md:text-2xl text-secondarydark font-bold mb-6 break-keep">
+오직, 영도구 주민에게만 빚지고 싶습니다
+</h3>
+<p class="text-graytext text-lg md:text-xl font-medium space-y-2 break-keep bg-sky-50 py-6 px-4 rounded-xl border border-sky-100">
+<span class="block text-dark font-bold">주민에게 빚져야 주민께 봉사로 갚습니다.</span>
+<span class="block">10만원까지는 연말정산 시 <span class="text-point font-bold">전액 돌려받습니다.</span></span>
+<span class="block">영도구 주민의 후원이 간절합니다.</span>
+</p>
+</div>
+<!-- 계좌 정보 및 복사 버튼 -->
+<div class="bg-white border-2 border-secondary rounded-2xl p-6 md:p-10 shadow-lg text-center mb-8 relative">
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+<span id="account-number" class="text-3xl md:text-4xl font-black text-dark tracking-wider">부산은행 101-2095-8405-08</span>
+</div>
+<p class="text-2xl font-bold text-gray-700 mb-8">
+예금주 : 권혁후원회(영도구의원선거) 강대환
+</p>
+<!-- 빨간색 포인트 컬러 버튼 -->
+<button onclick="copyAccount()" class="inline-flex items-center justify-center gap-2 bg-point text-white text-lg font-bold px-8 py-4 rounded-xl shadow-lg shadow-point/30 hover:bg-red-700 active:scale-95 transition-all w-full sm:w-auto">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+계좌 복사하기
+</button>
+</div>
+<!-- 후원상세안내 아코디언 -->
+<div class="mt-4 bg-graylight rounded-xl border border-gray-200">
+<button id="donate-detail-btn" class="w-full flex items-center justify-between p-5 text-lg md:text-xl font-bold text-dark hover:bg-sky-50 transition-colors rounded-xl focus:outline-none">
+<span>후원상세안내</span>
+<svg id="donate-detail-icon" class="w-6 h-6 text-graytext transition-transform duration-300 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+</button>
+<div id="donate-detail-content" class="donate-details px-5 bg-white rounded-b-xl text-graytext text-base md:text-lg border-t border-gray-200">
+<ul class="list-disc pl-5 space-y-3 font-medium">
+<li>10만원까지 전액 세액공제(연말정산 시 전액 돌려받음)</li>
+<li>10만원 초과분은 연말정산 시 15% 세액공제 됩니다.</li>
+<li>1인당 연간 최대 100만원까지 후원이 가능합니다.<br><span class="text-sm md:text-base text-gray-500">(법인, 단체, 외국인, 교원, 공무원은 후원이 불가)</span></li>
+<li>익명기부는 1회 10만원 이하, 연간 120만원 이하 후원 가능합니다.</li>
+영수증 발행 : 이름 / 주민번호 / 전화번호 / 주소 / 후원금액 / 입금일<br>
+<span class="text-xl text-secondarydark break-words cursor-pointer hover:font-black transition-all" onclick="copyPhoneNumber(this.innerText)" title="클릭하여 번호 복사">010-9644-3929</span>로 문자 보내주세요
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. 후보 소개 섹션 -->
+<section id="about" class="py-20 md:py-28 bg-sky-50 border-t-2 border-secondary border-opacity-30">
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+<div class="flex flex-col md:flex-row gap-8 items-center bg-white rounded-2xl p-6 md:p-10 shadow-sm">
+<!-- 좌측 : 후보자 프로필 -->
+<div class="w-full md:w-1/2 flex flex-col items-center justify-center">
+<img src="./assets/profile2.webp" alt="권혁 초상화 프로필" class="w-full h-auto max-w-[400px] object-cover rounded-2xl shadow-sm border border-gray-100" style="aspect-ratio: 4/5;">
+</div>
+<!-- 우측 : 인사말 -->
+<div class="w-full md:w-1/2 flex flex-col justify-center text-center md:text-left">
+<h3 class="text-3xl md:text-4xl font-black text-dark mb-4">여섯 번째 도전입니다.</h3>
+<p class="text-2xl md:text-3xl text-secondarydark font-bold leading-snug break-keep">진심으로 영도를 위해 일하고 싶습니다.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. 지역활동 소개 섹션 -->
+<section id="activity" class="py-20 md:py-28 bg-white overflow-hidden">
+<div class="text-center mb-16 max-w-5xl mx-auto px-4 sm:px-6">
+
+<h3 class="text-2xl md:text-4xl lg:text-5xl font-black text-dark break-keep tracking-tight leading-tight">
+어머니의 품처럼 따뜻한 영도<br>
+<span class="text-secondarydark mt-4 inline-block">영도의 아들 권혁입니다</span>
+</h3>
+</div>
+
+<!-- activity1 풀와이드 -->
+<div class="w-full mb-16 md:mb-24">
+<img src="./assets/activity1.webp" alt="주민대회" class="w-full h-auto object-cover">
+</div>
+
+<!-- 약력 영역 (activity1 하단 중앙) -->
+<div class="max-w-4xl mx-auto px-4 sm:px-6 mb-16">
+<div class="text-center bg-gray-50 rounded-2xl p-6 md:p-10 border border-gray-100 shadow-sm">
+<p class="text-xl md:text-2xl font-bold text-gray-800 leading-relaxed break-keep space-y-2">
+영도초등학교 73회 졸업<br>
+부산남중학교 37회 졸업<br>
+광명고등학교 2회 졸업<br>
+봉래시장에서 40년 넘게 과일가게를 운영한 충남상회 둘째아들
+</p>
+</div>
+</div>
+
+<div class="text-center mb-16 max-w-5xl mx-auto px-4 sm:px-6">
+<h2 class="text-3xl md:text-5xl font-black text-dark mb-4 break-keep">언제나 주민편, 영도사람 권혁</h2>
+<div class="w-16 h-1.5 bg-secondary mx-auto"></div>
+</div>
+
+<div class="max-w-5xl mx-auto px-4 sm:px-6">
+<div class="space-y-16 md:space-y-24">
+
+<!-- 그룹 1 -->
+<div class="bg-gray-50 rounded-2xl p-6 md:p-10 border border-gray-100 shadow-sm flex flex-col items-center">
+<div class="w-full flex justify-center mb-6">
+<img src="./assets/activity2.webp" alt="활동사진" class="w-full md:w-3/4 h-auto object-cover rounded-xl shadow-sm aspect-video">
+</div>
+<p class="text-2xl md:text-3xl font-bold text-dark break-keep leading-snug text-center">
+주민의 힘으로 영도를 바꿔왔습니다.
+</p>
+</div>
+
+<!-- 그룹 2 -->
+<div class="bg-sky-50/50 rounded-2xl p-6 md:p-10 border border-sky-100 shadow-sm flex flex-col items-center">
+<div class="w-full flex flex-col md:flex-row gap-4 justify-center mb-6">
+<img src="./assets/activity3.webp" alt="활동사진" class="w-full md:w-1/2 h-auto object-cover rounded-xl shadow-sm aspect-video">
+<img src="./assets/activity4.webp" alt="활동사진" class="w-full md:w-1/2 h-auto object-cover rounded-xl shadow-sm aspect-video">
+</div>
+<p class="text-2xl md:text-3xl font-bold text-dark break-keep leading-snug text-center">
+살기 좋은 영도를 만들기 위해 헌신해 온 사람
+</p>
+</div>
+
+<!-- 그룹 3 -->
+<div class="bg-gray-50 rounded-2xl p-6 md:p-10 border border-gray-100 shadow-sm flex flex-col items-center">
+<div class="w-full flex flex-col md:flex-row gap-4 justify-center mb-6">
+<img src="./assets/activity5.webp" alt="활동사진" class="w-full md:w-1/2 h-auto object-cover rounded-xl shadow-sm aspect-video">
+<img src="./assets/activity6.webp" alt="활동사진" class="w-full md:w-1/2 h-auto object-cover rounded-xl shadow-sm aspect-video">
+</div>
+<p class="text-2xl md:text-3xl font-bold text-dark break-keep leading-snug text-center">
+내란청산과 새로운 대한민국을 위해 앞장선 광장의 대표 일꾼
+</p>
+</div>
+
+<!-- 그룹 4 -->
+<div class="bg-sky-50/50 rounded-2xl p-6 md:p-10 border border-sky-100 shadow-sm flex flex-col items-center">
+<div class="w-full grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+<img src="./assets/activity7.webp" alt="활동사진" class="w-full h-auto object-cover rounded-xl shadow-sm aspect-square md:aspect-[3/4]">
+<img src="./assets/activity10.webp" alt="활동사진" class="w-full h-auto object-cover rounded-xl shadow-sm aspect-square md:aspect-[3/4]">
+<img src="./assets/activity8.webp" alt="활동사진" class="w-full h-auto object-cover rounded-xl shadow-sm aspect-square md:aspect-[3/4]">
+</div>
+<p class="text-xl md:text-2xl font-bold text-dark break-keep leading-relaxed text-center">
+안전한 영도를 위해 골목 구석구석 방역통을 메고 다녔습니다.<br><br>
+우리 아이들의 건강한 밥상을 위해 방사능으로부터 안전한 급식조례 제정에 앞장섰습니다.
+</p>
+</div>
+
+<!-- 그룹 5 -->
+<div class="bg-gray-50 rounded-2xl p-6 md:p-10 border border-gray-100 shadow-sm flex flex-col items-center">
+<div class="w-full flex flex-col md:flex-row gap-4 justify-center mb-6">
+<img src="./assets/activity9.webp" alt="활동사진" class="w-full md:w-1/2 h-auto object-cover rounded-xl shadow-sm aspect-video">
+<img src="./assets/activity11.webp" alt="활동사진" class="w-full md:w-1/2 h-auto object-cover rounded-xl shadow-sm aspect-video">
+</div>
+<p class="text-2xl md:text-3xl font-bold text-dark break-keep leading-snug text-center">
+의정활동 경험과 검증된 실력! 6대 영도구의회 후반기 부의장
+</p>
+</div>
+
+
+
+</div>
+</div>
+</section>
+<!-- 5. 공약 홍보 섹션 -->
+<section id="pledge" class="py-20 md:py-32 bg-sky-50 relative border-t border-secondary/20 min-h-[500px]">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10 text-center mb-10">
+<h2 class="text-3xl md:text-5xl font-black text-dark mb-4">주민을 위한 약속 (공약)</h2>
+<div class="w-16 h-1.5 bg-secondary mx-auto"></div>
+</div>
+<!-- 공보물이 아직 안 나온 상태 - '준비중입니다' 안내 패널 -->
+<!--
+<div class="absolute inset-x-0 bottom-0 top-[180px] flex items-center justify-center pointer-events-none px-4 z-20 pb-10">
+<div class="bg-white/95 px-8 md:px-16 py-12 rounded-3xl shadow-xl text-center border-4 border-secondary/50 max-w-2xl w-full">
+<div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6 text-white rotate-12">
+<svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+</div>
+<h3 class="text-3xl md:text-4xl font-black text-dark mb-4">공약 준비중입니다</h3>
+<p class="text-lg md:text-xl text-graytext font-medium break-keep">
+주민 여러분과 함께할 소중한 약속들을 꼼꼼하게 다듬고 있습니다.<br>
+예비공보물 발행 시기에 맞춰 곧 업데이트 하도록 하겠습니다.
+</p>
+</div>
+</div>
+-->
+<!-- 카드 UI -->
+<div class="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- 공약 1 -->
+<div class="bg-red-50 rounded-2xl p-6 border border-red-100 shadow-sm hover:shadow-md transition-shadow">
+<span class="inline-block px-3 py-1 bg-point text-white text-sm font-bold rounded-lg mb-4">핵심공약 1</span>
+<h4 class="text-2xl font-bold mb-3 text-point break-keep">우리 아이들의 안전한 등굣길 보장</h4>
+<h5 class="text-xl font-bold mb-3 text-dark break-keep">워킹스쿨버스(등하교 동행도우미) 도입하겠습니다</h5>
+<p class="text-graytext text-base md:text-lg leading-relaxed break-keep mt-4">
+영도 부모님의 한결같은 걱정과 불안입니다. 아이들을 학교에 보내고도 마음을 졸이셔야 했던 부모님의 무거운 걱정을 잘 알고 있습니다.<br>
+우리 아이들이 마음 놓고 등하교할 수 있는 '안전한 통학로'를 반드시 조성하겠습니다.
+</p>
+</div>
+<!-- 공약 2 -->
+<div class="bg-blue-50 rounded-2xl p-6 border border-blue-100 shadow-sm hover:shadow-md transition-shadow">
+<span class="inline-block px-3 py-1 bg-[#4b7a9f] text-white text-sm font-bold rounded-lg mb-4">핵심공약 2</span>
+<h4 class="text-2xl font-bold mb-3 text-[#4b7a9f] break-keep">영도다리 축제는 영도다리 중심으로!</h4>
+<p class="text-graytext text-base md:text-lg leading-relaxed break-keep mt-4">
+지역의 이름을 딴 축제는 그 역사적 현장에서 열릴 때 가장 빛이 납니다.<br>
+영도다리 중심의 영도축제가 되어야 합니다.
+</p>
+</div>
+<!-- 공약 3 -->
+<div class="bg-green-50 rounded-2xl p-6 border border-green-100 shadow-sm hover:shadow-md transition-shadow">
+<span class="inline-block px-3 py-1 bg-[#5b8966] text-white text-sm font-bold rounded-lg mb-4">핵심공약 3</span>
+<h4 class="text-2xl font-bold mb-3 text-[#5b8966] break-keep">지하철 없는 영도! 어르신 버스비 지원</h4>
+<p class="text-graytext text-base md:text-lg leading-relaxed break-keep mt-4">
+지하철을 바로 이용할 수 없는 영도에서 어르신 버스비 지원은 어르신들의 교통복지와 이동권 보장, 사회활동을 활성화합니다.
+</p>
+</div>
+<!-- 공약 4 -->
+<div class="bg-purple-50 rounded-2xl p-6 border border-purple-100 shadow-sm hover:shadow-md transition-shadow col-span-1 md:col-span-2 lg:col-span-1">
+<span class="inline-block px-3 py-1 bg-[#6b588a] text-white text-sm font-bold rounded-lg mb-4">핵심공약 4</span>
+<h4 class="text-2xl font-bold mb-3 text-[#6b588a] break-keep">주민 곁에 권혁! 주민을 하늘같이 모시겠습니다</h4>
+<p class="text-graytext text-base md:text-lg leading-relaxed break-keep mt-4">
+구의원은 주민의 심부름꾼입니다. 항상 발로 뛰며 주민의 목소리를 듣겠습니다.<br>
+뚝심 있게! 오직 주민들의 더 나은 삶을 위한 정치를 하겠습니다.
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5.5 하단 후원 안내 요약 -->
+<section class="py-16 bg-sky-50 border-t border-secondary/20">
+<div class="max-w-4xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-8">
+<h2 class="text-3xl md:text-4xl font-black text-dark mb-4 break-keep">권혁에게 힘이 되어주세요.</h2>
+</div>
+<div class="bg-white border-2 border-secondary rounded-2xl p-6 shadow-sm text-center">
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+<span id="account-number-2" class="text-2xl md:text-3xl font-black text-dark tracking-wider">부산은행 101-2095-8405-08</span>
+</div>
+<p class="text-xl font-bold text-gray-700 mb-6">
+예금주 : 권혁후원회(영도구의원선거) 강대환
+</p>
+<button onclick="copyAccount2()" class="inline-flex items-center justify-center gap-2 bg-point text-white text-base font-bold px-6 py-3 rounded-xl shadow-md hover:bg-red-700 transition-all w-full sm:w-auto">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+계좌 복사하기
+</button>
+</div>
+</div>
+</section>
+<!-- 6. 푸터 -->
+<footer class="bg-dark text-white pt-10 pb-8 mt-auto">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+<div class="text-gray-400 font-light text-sm md:text-base mb-6 space-y-2">
+<p>진보당 권혁 영도구 가선거구 구의원 후보</p>
+<p>전화: <strong class="text-white cursor-pointer hover:text-secondary transition-colors" onclick="copyPhoneNumber(this.innerText)" title="클릭하여 번호 복사">010-9644-3929</strong></p>
+</div>
+<div class="text-xs text-gray-500 font-light mt-8">
+&copy;2026 권혁 선거사무소. All rights reserved.
+</div>
+</div>
+</footer>
+<!-- 7. 자바스크립트 스크립트 -->
+<script>
+// --- 모바일 메뉴 로직 ---
+const btn = document.getElementById('mobile-menu-btn');
+const menu = document.getElementById('mobile-menu');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+btn.addEventListener('click', () => {
+  menu.classList.toggle('hidden');
+});
+
+mobileLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.add('hidden');
+  });
+});
+
+// --- 전화번호 복사 로직 ---
+function copyPhoneNumber(numberStr) {
+  const tempElem = document.createElement('textarea');
+  tempElem.value = numberStr;
+  document.body.appendChild(tempElem);
+  tempElem.select();
+  try {
+    document.execCommand('copy');
+    alert('전화번호가 정상적으로 복사되었습니다.');
+  } catch(err) {
+    alert('복사에 실패했습니다. 번호를 직접 복사해주세요.');
+  }
+  document.body.removeChild(tempElem);
+}
+
+// --- 계좌번호 복사 로직 ---
+function copyAccount() {
+  const accountText = document.getElementById('account-number').innerText;
+  const tempElem = document.createElement('textarea');
+  tempElem.value = accountText;
+  document.body.appendChild(tempElem);
+  tempElem.select();
+  try {
+    document.execCommand('copy');
+    alert('계좌번호가 정상적으로 복사되었습니다. \n따뜻한 후원에 진심으로 감사드립니다!');
+  } catch(err) {
+    alert('복사에 실패했습니다. 번호를 직접 복사해주세요.');
+  }
+  document.body.removeChild(tempElem);
+}
+
+function copyAccount2() {
+  const accountText = document.getElementById('account-number-2').innerText;
+  const tempElem = document.createElement('textarea');
+  tempElem.value = accountText;
+  document.body.appendChild(tempElem);
+  tempElem.select();
+  try {
+    document.execCommand('copy');
+    alert('계좌번호가 정상적으로 복사되었습니다. \n따뜻한 후원에 진심으로 감사드립니다!');
+  } catch(err) {
+    alert('복사에 실패했습니다. 번호를 직접 복사해주세요.');
+  }
+  document.body.removeChild(tempElem);
+}
+
+// --- 후원 상세 안내 아코디언 로직 ---
+const donateBtn = document.getElementById('donate-detail-btn');
+const donateContent = document.getElementById('donate-detail-content');
+const donateIcon = document.getElementById('donate-detail-icon');
+
+donateBtn.addEventListener('click', () => {
+  const isClosed = !donateContent.classList.contains('active');
+  if(isClosed) {
+    donateContent.classList.add('active');
+    donateIcon.classList.add('rotate-180');
+  } else {
+    donateContent.classList.remove('active');
+    donateIcon.classList.remove('rotate-180');
+  }
+});
+</script>
+</body>
+</html>
